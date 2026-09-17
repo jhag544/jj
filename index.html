@@ -1,394 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Trade With Munaaf</title>
+<title>Trade With Gautam Jha | Trading Learning Community</title>
+<meta name="description" content="Join Trade With Gautam Jha on Telegram for market learning, chart concepts and educational updates.">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','1770176760556534');
+fbq('track','PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1770176760556534&ev=PageView&noscript=1"/>
+</noscript>
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:
-linear-gradient(135deg,#020617,#0f172a,#111827);
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:20px;
-overflow:hidden;
-color:#fff;
+    min-height:100vh;
+    background:
+        radial-gradient(circle at top,#102536 0%,#05080b 35%,#000 75%);
+    color:#fff;
+    padding:18px 14px 28px;
 }
 
-/* GLOW */
-
-.blur1,
-.blur2{
-position:fixed;
-border-radius:50%;
-filter:blur(90px);
-z-index:-1;
+.container{
+    width:100%;
+    max-width:430px;
+    margin:auto;
+    text-align:center;
 }
 
-.blur1{
-width:260px;
-height:260px;
-background:#22c55e;
-top:-80px;
-left:-80px;
-opacity:0.25;
+/* Profile */
+.profile-wrap{
+    width:145px;
+    height:145px;
+    margin:8px auto 18px;
+    padding:4px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#38b6ff,#ffffff,#1677b8);
+    box-shadow:0 0 35px rgba(56,182,255,.35);
 }
 
-.blur2{
-width:260px;
-height:260px;
-background:#3b82f6;
-bottom:-100px;
-right:-100px;
-opacity:0.25;
+.profile-wrap img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #05080b;
 }
 
-/* CARD */
-
-.card{
-width:100%;
-max-width:430px;
-
-background:rgba(255,255,255,0.06);
-backdrop-filter:blur(16px);
-
-border:1px solid rgba(255,255,255,0.08);
-
-border-radius:28px;
-
-padding:30px 24px;
-
-box-shadow:
-0 15px 50px rgba(0,0,0,0.6),
-inset 0 1px 1px rgba(255,255,255,0.08);
-
-text-align:center;
-
-position:relative;
-overflow:hidden;
+/* Heading */
+.badge{
+    display:inline-block;
+    padding:6px 13px;
+    border-radius:30px;
+    border:1px solid rgba(56,182,255,.45);
+    background:rgba(56,182,255,.08);
+    color:#6bc9ff;
+    font-size:12px;
+    font-weight:bold;
+    letter-spacing:.5px;
+    margin-bottom:10px;
 }
-
-/* TOP TAG */
-
-.top-tag{
-display:inline-block;
-padding:8px 16px;
-border-radius:50px;
-font-size:12px;
-font-weight:700;
-background:rgba(34,197,94,0.12);
-border:1px solid rgba(34,197,94,0.3);
-color:#4ade80;
-margin-bottom:18px;
-}
-
-/* LOGO */
-
-.logo-wrap{
-display:flex;
-justify-content:center;
-margin-bottom:15px;
-}
-
-.logo{
-width:90px;
-height:90px;
-border-radius:50%;
-border:3px solid #facc15;
-padding:4px;
-object-fit:cover;
-
-box-shadow:
-0 0 25px rgba(250,204,21,0.4);
-}
-
-/* HEADING */
 
 h1{
-font-size:28px;
-font-weight:800;
-line-height:1.2;
-margin-bottom:8px;
-
-background:linear-gradient(90deg,#facc15,#ffffff);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+    font-size:27px;
+    line-height:1.2;
+    margin-bottom:8px;
 }
 
-h2{
-font-size:14px;
-font-weight:500;
-opacity:0.85;
-margin-bottom:18px;
-letter-spacing:1px;
+.subtitle{
+    color:#b7c1c9;
+    font-size:14px;
+    line-height:1.5;
+    margin-bottom:18px;
 }
 
-.desc{
-font-size:14px;
-line-height:1.7;
-opacity:0.85;
-margin-bottom:20px;
+/* Main CTA */
+.join-btn{
+    position:relative;
+    display:block;
+    width:100%;
+    padding:16px 14px;
+    border-radius:12px;
+    text-decoration:none;
+    color:#fff;
+    font-size:17px;
+    font-weight:800;
+    letter-spacing:.3px;
+    background:linear-gradient(135deg,#1597e5,#07558f);
+    border:1px solid rgba(255,255,255,.7);
+    box-shadow:0 8px 25px rgba(21,151,229,.28);
+    transition:.2s;
 }
 
-/* TRUST */
-
-.trust-box{
-display:flex;
-justify-content:space-between;
-gap:10px;
-margin-bottom:18px;
+.join-btn:active{
+    transform:scale(.98);
 }
 
-.trust{
-flex:1;
-background:rgba(255,255,255,0.05);
-padding:12px 10px;
-border-radius:14px;
-border:1px solid rgba(255,255,255,0.06);
-font-size:12px;
-font-weight:600;
+.cta-small{
+    display:block;
+    margin-top:8px;
+    color:#8fa0ab;
+    font-size:11px;
 }
 
-/* BUTTON */
-
-.btn{
-display:block;
-width:100%;
-text-decoration:none;
-
-background:linear-gradient(90deg,#22c55e,#16a34a);
-
-padding:17px;
-border-radius:14px;
-
-font-size:16px;
-font-weight:700;
-color:#fff;
-
-margin:14px 0;
-
-box-shadow:0 10px 25px rgba(34,197,94,0.35);
-
-transition:0.3s;
+/* Arrow */
+.arrow{
+    font-size:27px;
+    margin:7px 0 5px;
+    color:#48baff;
 }
 
-.btn:hover{
-transform:translateY(-2px) scale(1.02);
+/* Info Card */
+.card{
+    margin-top:13px;
+    padding:18px 15px;
+    text-align:left;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.10);
+    background:rgba(12,18,23,.88);
+    box-shadow:0 10px 35px rgba(0,0,0,.35);
 }
 
-/* FEATURES */
-
-.features{
-margin-top:15px;
-text-align:left;
+.card-title{
+    text-align:center;
+    font-size:16px;
+    font-weight:800;
+    margin-bottom:14px;
 }
 
-.feature{
-display:flex;
-align-items:center;
-gap:10px;
-
-background:rgba(255,255,255,0.04);
-
-padding:12px;
-border-radius:12px;
-
-margin-bottom:10px;
-
-font-size:14px;
+.item{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,.07);
+    font-size:14px;
+    line-height:1.4;
+    color:#e8edf1;
 }
 
-/* LIVE BOX */
-
-.live{
-margin-top:18px;
-
-background:linear-gradient(90deg,
-rgba(59,130,246,0.15),
-rgba(34,197,94,0.15));
-
-padding:14px;
-border-radius:14px;
-
-border:1px solid rgba(255,255,255,0.08);
-
-font-size:13px;
-line-height:1.7;
+.item:last-child{
+    border-bottom:none;
+    padding-bottom:0;
 }
 
-/* TIMER */
-
-.timer{
-margin-top:18px;
-font-size:13px;
-font-weight:700;
-color:#facc15;
-
-animation:blink 1s infinite;
+.icon{
+    font-size:18px;
+    width:24px;
+    flex-shrink:0;
 }
 
-@keyframes blink{
-50%{
-opacity:0.5;
-}
+/* Second CTA */
+.second-btn{
+    margin-top:15px;
 }
 
-/* FOOTER */
+/* Disclaimer */
+.disclaimer{
+    margin-top:15px;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,.10);
+    color:#9da8af;
+    font-size:11px;
+    line-height:1.5;
+    background:rgba(255,255,255,.025);
+}
+
+/* Agency */
+.agency{
+    display:block;
+    margin:15px auto 0;
+    width:92%;
+    padding:11px 15px;
+    border-radius:12px;
+    text-decoration:none;
+    color:#9ca8b1;
+    background:#0b1116;
+    border:1px solid #1c2b36;
+    font-size:13px;
+}
+
+.agency strong{
+    color:#45baff;
+}
 
 .footer{
-margin-top:22px;
-font-size:12px;
-opacity:0.7;
-line-height:1.7;
+    margin-top:13px;
+    color:#68747c;
+    font-size:10px;
 }
 
-.footer a{
-color:#38bdf8;
-text-decoration:none;
-font-weight:600;
+/* Mobile */
+@media(max-width:360px){
+    h1{
+        font-size:23px;
+    }
+
+    .profile-wrap{
+        width:125px;
+        height:125px;
+    }
+
+    .join-btn{
+        font-size:15px;
+    }
 }
-
-.risk{
-margin-top:10px;
-font-size:11px;
-opacity:0.5;
-}
-
-/* MOBILE */
-
-@media(max-width:480px){
-
-.card{
-padding:26px 18px;
-border-radius:24px;
-}
-
-h1{
-font-size:24px;
-}
-
-.btn{
-font-size:15px;
-padding:15px;
-}
-
-}
-
 </style>
 </head>
 
 <body>
 
-<div class="blur1"></div>
-<div class="blur2"></div>
+<div class="container">
 
-<div class="card">
+    <!-- Profile -->
+    <div class="profile-wrap">
+        <img
+        src="https://i.ibb.co/8gs0Fr1S/vx-KQu-Tj-QOVl73qgedt-G8n1l9g-Obu-PUvu-D2n5-I1y-Gh-Wf-Akj-CD73ah-Di0-Rb-Zj5zz1d-Ff-It-USH-Yyp-D0v9-F5zm.jpg"
+        alt="Trade With Gautam Jha">
+    </div>
 
-<div class="top-tag">
-🔥 INDIA'S FAST GROWING TRADING COMMUNITY
+    <div class="badge">📈 TRADING LEARNING COMMUNITY</div>
+
+    <h1>Trade With Gautam Jha</h1>
+
+    <div class="subtitle">
+        Learn market concepts, chart reading and risk-management basics
+        through our Telegram community.
+    </div>
+
+    <!-- TOP CTA -->
+    <a
+        href="https://t.me/+-CJH1TyYsegxYTBl"
+        class="join-btn"
+        onclick="fbq('track','Lead');"
+    >
+        JOIN FREE TELEGRAM CHANNEL
+    </a>
+
+    <div class="cta-small">
+        Free access • Educational content • Telegram
+    </div>
+
+    <div class="arrow">👇</div>
+
+    <!-- FEATURES -->
+    <div class="card">
+
+        <div class="card-title">
+            What You Can Explore
+        </div>
+
+        <div class="item">
+            <span class="icon">📊</span>
+            <span>Market analysis and educational discussions</span>
+        </div>
+
+        <div class="item">
+            <span class="icon">📈</span>
+            <span>Nifty & market chart-reading concepts</span>
+        </div>
+
+        <div class="item">
+            <span class="icon">🎯</span>
+            <span>Technical-analysis learning concepts</span>
+        </div>
+
+        <div class="item">
+            <span class="icon">🛡️</span>
+            <span>Risk-management and trading awareness</span>
+        </div>
+
+        <div class="item">
+            <span class="icon">🚀</span>
+            <span>Regular educational market updates</span>
+        </div>
+
+    </div>
+
+    <!-- SECOND CTA -->
+    <a
+        href="https://t.me/+-CJH1TyYsegxYTBl"
+        class="join-btn second-btn"
+        onclick="fbq('track','Lead');"
+    >
+        JOIN FREE TELEGRAM CHANNEL
+    </a>
+
+    <div class="cta-small">
+        Tap the button above to continue
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+        ⚠️ Educational purpose only. Trading and investing involve risk.
+        Please make decisions according to your own research and risk tolerance.
+    </div>
+
+    <!-- Adbuild Agency -->
+    <a
+        href="https://telegram.me/+3XoqJNLxYHswNTc1"
+        class="agency"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Managed by <strong>Adbuildagency</strong>
+    </a>
+
+    <div class="footer">
+        © 2026 Trade With Gautam Jha
+    </div>
+
 </div>
-
-<div class="logo-wrap">
-<img src="https://i.ibb.co/HThtfpR7/Whats-App-Image-2026-01-30-at-8-54-08-PM.jpg" class="logo">
-</div>
-
-<h1>TRADE WITH MUNAAF</h1>
-
-<h2>NIFTY • BANKNIFTY • OPTION CALLS</h2>
-
-<p class="desc">
-Get daily high-probability intraday setups with
-accurate entries, targets & risk management.
-Perfect for beginners and active traders.
-</p>
-
-<div class="trust-box">
-
-<div class="trust">
-📈 5000+ Active Traders
-</div>
-
-<div class="trust">
-⚡ Live Market Updates
-</div>
-
-</div>
-
-<!-- BUTTON -->
-
-<a href="https://t.me/+2PsKWi3L1Uk3NjZl" class="btn">
-🚀 JOIN FREE TELEGRAM NOW
-</a>
-
-<!-- FEATURES -->
-
-<div class="features">
-
-<div class="feature">
-✅ 5–7 Premium Setups Daily
-</div>
-
-<div class="feature">
-✅ Exact Entry • SL • Targets
-</div>
-
-<div class="feature">
-✅ Beginner Friendly Guidance
-</div>
-
-<div class="feature">
-✅ Fast News & Live Updates
-</div>
-
-</div>
-
-<!-- LIVE -->
-
-<div class="live">
-🔥 Today's Market Opportunities Are Live <br>
-Join Now Before Free Access Ends
-</div>
-
-<!-- BUTTON -->
-
-<a href="https://t.me/+2PsKWi3L1Uk3NjZl" class="btn">
-💰 START FREE TODAY
-</a>
-
-<div class="timer">
-⏳ Limited Time Free Access
-</div>
-
-<!-- FOOTER -->
-
-<div class="footer">
-
-Powered by
-<a href="https://t.me/+3XoqJNLxYHswNTc1" target="_blank">
-AdsBuild Agency
-</a>
-
-<div class="risk">
-⚠ Market investments are subject to market risk
-</div>
-
-</div>
-
-</div>
-
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2954212684925148');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2954212684925148&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </body>
 </html>
